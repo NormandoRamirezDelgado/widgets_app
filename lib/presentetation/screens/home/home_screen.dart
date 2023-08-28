@@ -52,11 +52,12 @@ class _CustomListTitle extends StatelessWidget {
       title: Text(menuItem.title),
       subtitle: Text(menuItem.subTitle),
       onTap: () {
-        Navigator.of(context).push(
-          MaterialPageRoute(
-            builder: (context) => const ButtonsScreen()
-          )
-        );
+        // Navigator.of(context).push(
+        //   MaterialPageRoute(
+        //     builder: (context) => const ButtonsScreen()
+        //   )
+        // );
+        Navigator.pushNamed(context, menuItem.link);
       },
     );
   }
